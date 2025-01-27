@@ -1,0 +1,4 @@
+*.jpeg
+*.h5
+*.txt
+node_modules

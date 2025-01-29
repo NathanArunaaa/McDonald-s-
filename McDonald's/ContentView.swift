@@ -23,7 +23,8 @@ struct ContentView: View {
                     Label("Profile", systemImage: "person.fill")
                 }
         }
-        .accentColor(.red)
+        .preferredColorScheme(.light) // Forces Light Mode
+
     }
 }
 //asd
@@ -69,4 +70,5 @@ struct ProfileView: View {
 
 #Preview {
     ContentView()
+    
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E53301B72D727F6300B60F9A /* arches.png in Resources */ = {isa = PBXBuildFile; fileRef = E53301B62D727F6300B60F9A /* arches.png */; };
 		E5AD48D42D4741D200DD7D32 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AD48D32D4741D200DD7D32 /* Launch Screen.storyboard */; };
 		E5AD48DD2D474BA500DD7D32 /* Speedee.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5AD48DC2D474BA500DD7D32 /* Speedee.ttf */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E53301B62D727F6300B60F9A /* arches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arches.png; sourceTree = "<group>"; };
 		E5AD48A62D473DB400DD7D32 /* McDonald's.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "McDonald's.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AD48B62D473DB600DD7D32 /* McDonald'sTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "McDonald'sTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AD48C02D473DB600DD7D32 /* McDonald'sUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "McDonald'sUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				E5AD48DC2D474BA500DD7D32 /* Speedee.ttf */,
+				E53301B62D727F6300B60F9A /* arches.png */,
 				E5AD48D32D4741D200DD7D32 /* Launch Screen.storyboard */,
 				E5AD48A82D473DB400DD7D32 /* McDonald's */,
 				E5AD48B92D473DB600DD7D32 /* McDonald'sTests */,
@@ -223,6 +226,7 @@
 			files = (
 				E5AD48D42D4741D200DD7D32 /* Launch Screen.storyboard in Resources */,
 				E5AD48DD2D474BA500DD7D32 /* Speedee.ttf in Resources */,
+				E53301B72D727F6300B60F9A /* arches.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +423,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +457,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

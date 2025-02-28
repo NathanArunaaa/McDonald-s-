@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Arches_CMYK.png" translatesAutoresizingMaskIntoConstraints="NO" id="yBf-Tj-Xwq">
-                                <rect key="frame" x="122" y="352" width="149" height="149"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="arches.png" translatesAutoresizingMaskIntoConstraints="NO" id="2iz-PJ-ExQ">
+                                <rect key="frame" x="-425" y="326" width="1258" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -30,6 +30,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Arches_CMYK.png" width="975" height="890"/>
+        <image name="arches.png" width="1920" height="1080"/>
     </resources>
 </document>

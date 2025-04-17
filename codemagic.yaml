@@ -1,16 +1,20 @@
 workflows:
-  build_ios:
+  ios-app:
     name: Build iOS App
     max_build_duration: 60
     environment:
-      XCODE_PROJECT: "McDonald's.xcodeproj"
-      XCODE_SCHEME: "McDonald-s-"
-      XCODE_CONFIGURATION: "Release"
-      EXPORT_METHOD: "ad-hoc"
+      vars:
+        XCODE_PROJECT: "McDonald's.xcodeproj"
+        XCODE_SCHEME: "McDonald's"
     scripts:
-      - echo "Starting Xcode build..."
-      - xcode-project use "$XCODE_PROJECT"
-      - xcode build --scheme "$XCODE_SCHEME" --configuration "$XCODE_CONFIGURATION"
-      - xcode export-build --scheme "$XCODE_SCHEME" --export-method "$EXPORT_METHOD"
+      - name: Set up project
+        script: |
+          echo "Using project: $XCODE_PROJECT"
+          echo "Using scheme: $XCODE_SCHEME"
+      - name: Build .ipa
+        script: |
+          xcodebuild clean -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME" -sdk iphoneos -configuration Release
+          xcodebuild archive -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME" -archivePath build/"$XCODE_SCHEME".xcarchive
+          xcodebuild -exportArchive -archivePath build/"$XCODE_SCHEME".xcarchive -exportPath build/export -exportOptionsPlist exportOptions.plist
     artifacts:
-      - "*.ipa"
+      - build/export/*.ipa
